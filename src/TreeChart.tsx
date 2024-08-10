@@ -54,7 +54,17 @@ const TreeChart = () => {
     };
   }, []);
 
-  return <div ref={chartRef} style={{ width: '100%', height: '400px' }} />;
+  return (
+    <div
+      ref={chartRef}
+      style={{
+        width: '100%',
+        height: '400px',
+        border: '2px solid #ccc',
+        marginBottom: '8px',
+      }}
+    />
+  );
 };
 
 export default TreeChart;
